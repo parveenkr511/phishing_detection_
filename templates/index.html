@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhishCheck</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">PhishCheck</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact us">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="title">Never get scammed again with PhishCheck</h1>
+    <p class="subtitle">
+      Stay ahead of phishing threats with PhishCheck. Our advanced detection system keeps you safe online by identifying fraudulent websites in real-time.<br>
+      Protect your data with PhishCheck today.
+    </p>
+    
+    <form method="post" class="form-group">
+      <input
+        type="text"
+        name="url"
+        class="input-box"
+        placeholder="Enter the website"
+        value="{{ url }}"
+        required
+      />
+      <button type="submit" class="check-btn">Check website</button>
+      <button type="button" class="report-btn" onclick="alert('Reporting not implemented yet.')">Report website</button>
+    </form>
+
+    {% if result %}
+      <div class="result-box">
+        {{ result }}
+      </div>
+    {% endif %}
+  </section>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Phishing URL Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>If you have any queries, suggestions, or would like to collaborate, feel free to reach out:</p>
+    <ul>
+      <li><strong>Email:</strong> Parveenkr511@gmail.com</li>
+      <li><strong>Phone:</strong> +91-7827865139</li>
+      <li><strong>Address:</strong> New-delhi, India</li>
+    </ul>
+    <p>We value your feedback and aim to respond within 24 hours.</p>
+    <a href="./index.html">Back to Home</a>
+  </div>
+</body>
+</html>
